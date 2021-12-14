@@ -1,0 +1,59 @@
+$color: #fff;
+$theme-color: rgb(110, 20, 20);
+$theme-opacity-color: rgba(110, 20, 20, 0.7);
+$theme-opacity-color-dark: rgba(110, 20, 20, 0.9);
+
+$flower-color: #ffdf9d;
+$user-text-color: #ccc;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  background-color: $color;
+}
+
+.fullscreen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  user-select: none;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 150ms;
+}

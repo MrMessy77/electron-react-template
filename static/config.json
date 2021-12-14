@@ -1,0 +1,42 @@
+{
+  "socket": {
+    "open": true,
+    "host": "192.168.3.10",
+    "port": "7272",
+    "cmd": {
+      "reg": "reg_s_magic",
+      "extend": []
+    }
+  },
+  "water": {
+    "style": "top: 4.6%; right: 2.1%; width: 8%;"
+  },
+  "base": {
+    "name": "magic",
+    "width": 1800,
+    "height": 640,
+    "openDevTools": true
+  },
+  "characters": {
+    "0": {
+      "folder": "盛氏后人",
+      "avatars": []
+    },
+    "1": {
+      "folder": "盛宣怀研究会",
+      "avatars": ["陈满林.png", "张跃.png"],
+      "matchs": ["2.陈满林", "12.张跃"]
+    },
+    "2": {
+      "folder": "专家学者",
+      "avatars": ["陈吉龙.png", "王荣泰.png", "叶舟.png", "熊月之.png", "欧七斤.png"],
+      "matchs": ["1.陈吉龙", "9.王荣泰", "15.叶舟", "16.熊月之", "17.欧七斤"]
+    }
+  },
+  "cards": {
+    "image": ["慈禧","费维恺","李鸿章","孙中山","唐文治","夏东元","张之洞","郑观应","王尔敏","王仲伟"],
+    "video": ["陈吉龙","陈满林","王荣泰","熊月之","叶舟","张跃","欧七斤"]
+  },
+  "ancients": ["3.慈禧","4.费维恺","5.李鸿章","6.孙中山","7.唐文治","8.王尔敏","10.王仲伟","11.夏东元","13.张之洞","14.郑观应"],
+  "qrcode_url": "https://sub.cantocg.com/www/sxh/moping/index.html#/pages/index/index"
+}

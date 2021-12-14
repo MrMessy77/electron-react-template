@@ -1,0 +1,19 @@
+@import "./vars.scss";
+
+// px单位转成vw单位
+@function px2vw ($size: 14px, $width: $screenWidth) {
+	@if (type-of($size) == "number" and unit($size) == "px") {
+		@return $size * 100vw / $width;
+	} @else {
+		@return $size;
+	}
+}
+
+// px单位转成vh单位
+@function px2vh ($size: 14px, $height: $screenHeight) {
+	@if (type-of($size) == "number" and unit($size) == "px") {
+		@return $size * 100vh / $height;
+	} @else {
+		@return $size;
+	}
+}

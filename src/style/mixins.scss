@@ -1,0 +1,34 @@
+@import "./function.scss";
+
+// 位置
+@mixin fixPosition($l,$t,$w,$h){
+  position: absolute;
+  left: px2vw($l, $screenWidth);
+  top: px2vh($t, $screenHeight);
+  width: px2vw($w, $screenWidth);
+  height: px2vh($h, $screenHeight);
+}
+
+// 全屏
+@mixin fullScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+// 居中
+@mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+// 居中
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

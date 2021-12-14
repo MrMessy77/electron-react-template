@@ -1,0 +1,96 @@
+.character {
+  // width: 100%;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    &--item {
+      width: auto;
+      height: 3vh;
+      margin: 0 1vh;
+      position: relative;
+      &-img {
+        width: auto;
+        height: 100%;
+      }
+      &-arrow {
+        position: absolute;
+        width: 2.8vh;
+        height: 9vh;
+        left: calc(50% - 1.4vh);
+        top: calc(50% - 4.5vh);
+      }
+    }
+  }
+  &__intro {
+    flex: 1;
+    position: relative;
+    &--bg {
+      width: 100%;
+      height: 100%;
+    }
+    &--mask {
+      @include fullScreen;
+    }
+    &--content {
+      @include fullScreen;
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 70%;
+      left: 10%;
+      top: 14%;
+      &-item {
+        height: 14.5vh;
+        margin: 0 1.2%;
+      }
+    }
+    &--video {
+      @include fullScreen;
+      width: 96.3%;
+      height: 94%;
+      left: 1.8%;
+      top: 2.5%;
+      object-fit: fill;
+    }
+    &--qrcode {
+      position: absolute;
+      right: 5%;
+      bottom: 12%;
+      >.wrap {
+        width: 7vh;
+        height: 7vh;
+  
+        >canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+  
+      >span.tips {
+        font-size: 2vh;
+        margin-top: 0.5vh;
+        color: #443c38;
+        font-family: 'font1';
+      }
+    }
+    &--close {
+      position: absolute;
+      bottom: -8%;
+      right: calc(50% - 1.9vh);
+      width: 3.8vh;
+      height: 3.8vh;
+    }
+    &--back {
+      position: absolute;
+      bottom: 3.1%;
+      right: 1.8%;
+      width: 6vh;
+      height: 6vh;
+    }
+  }
+}
